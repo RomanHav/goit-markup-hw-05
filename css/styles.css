@@ -541,6 +541,7 @@ ul {
 }
 .close-modal-button:focus,
 .close-modal-button:hover {
+  fill: #ffffff;
   background-color: #404bbf;
   border: none;
 }
