@@ -359,6 +359,8 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="lower-part">
         <div class="container">
             <div class="logo-and-info">
@@ -403,9 +405,23 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-subscribe">
+                <p class="subscribe-title">Subscribe</p>
+                <form class="footer-form">
+                    <input class="footer-subscribe-input" name="mail" type="email" placeholder="E-mail">
+                    <div class="input-footer-wrap">
+                        <button class="footer-subscribe-button">Subscribe
+                            <svg class="footer-subscribe-button-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-paper-plane"></use>
+                            </svg></button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
-    <div class="backdrop is-open">
+
+    <!-- Backdrop -->
+    <div class="backdrop">
         <div class="modal-window">
             <button class="close-modal-button">
                 <svg class="close-modal-icon" width="8px" height="8px">
@@ -448,13 +464,19 @@
                     <textarea class="review-form-comment" name="user-comment" id="user-comment"
                         placeholder="Text input"></textarea>
                 </div>
-                <div class="review-form-field-wrapper">
-                    <input class="review-form-checkbox" name="user-privacy-and-policy" value="true" type="checkbox"
-                        required>
-                    <label class="review-form-label" for="user-privacy-and-policy">I accept the terms and conditions of
-                        the <a href="">Privacy
-                            Policy</a></label>
+
+                <div class="review-form-checkbox-wrapper">
+                    <input class="review-form-checkbox visually-hidden" name="user-privacy-and-policy"
+                        id="user-privacy-and-policy" value="true" type="checkbox" required>
+                    <label class="review-form-label-checkbox" for="user-privacy-and-policy">
+                        <span class="review-form-own-checkbox">
+                            <svg class="review-form-own-checkbox-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-checkmark"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
                 </div>
+                <button class="review-for-btn" type="submit">Send</button>
             </form>
         </div>
     </div>
