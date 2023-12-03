@@ -408,23 +408,23 @@
             <div class="footer-subscribe">
                 <p class="subscribe-title">Subscribe</p>
                 <form class="footer-form">
-                    <input class="footer-subscribe-input" name="mail" type="email" placeholder="E-mail">
-                    <div class="input-footer-wrap">
-                        <button class="footer-subscribe-button">Subscribe
-                            <svg class="footer-subscribe-button-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-paper-plane"></use>
-                            </svg></button>
-                    </div>
+                    <label class="footer-subscribe-label">
+                        <input class="footer-subscribe-input" name="mail" type="email" placeholder="E-mail">
+                    </label>
+                    <button class="footer-subscribe-button" type="submit">Subscribe
+                        <svg class="footer-subscribe-button-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-paper-plane"></use>
+                        </svg></button>
                 </form>
             </div>
         </div>
     </footer>
 
     <!-- Backdrop -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
         <div class="modal-window">
-            <button class="close-modal-button">
-                <svg class="close-modal-icon" width="8px" height="8px">
+            <button class="close-modal-button" type="button">
+                <svg class="close-modal-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-window"></use>
                 </svg>
             </button>
@@ -435,7 +435,7 @@
                     <div class="review-form-input-wrapper">
                         <input class="review-form-input" name="user-name" id="user-name" type="text"
                             pattern="[a-zA-Zа-яіІїЇєЄгГ']" title="Alex" required>
-                        <svg class="input-icon" width="18px" height="18px">
+                        <svg class="input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person-icon"></use>
                         </svg>
                     </div>
@@ -445,7 +445,7 @@
                     <div class="review-form-input-wrapper">
                         <input class="review-form-input" name="phone-number" id="phone-number" type="tel"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" required>
-                        <svg class="input-icon" width="18px" height="18px">
+                        <svg class="input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone-icon"></use>
                         </svg>
                     </div>
@@ -454,27 +454,28 @@
                     <label class="review-form-label" for="user-email">Email</label>
                     <div class="review-form-input-wrapper">
                         <input class="review-form-input" name="user-email" id="user-email" type="email" required>
-                        <svg class="input-icon" width="18px" height="18px">
+                        <svg class="input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email-icon"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="review-form-field-wrapper">
+                <div class="review-form-field-comment">
                     <label class="review-form-label" for="user-comment">Comment</label>
                     <textarea class="review-form-comment" name="user-comment" id="user-comment"
                         placeholder="Text input"></textarea>
                 </div>
 
                 <div class="review-form-checkbox-wrapper">
-                    <input class="review-form-checkbox visually-hidden" name="user-privacy-and-policy"
-                        id="user-privacy-and-policy" value="true" type="checkbox" required>
-                    <label class="review-form-label-checkbox" for="user-privacy-and-policy">
+                    <input class="review-form-checkbox visually-hidden" name="user-privacy" id="user-privacy"
+                        value="true" type="checkbox" required>
+                    <label class="review-form-label-checkbox" for="user-privacy">
                         <span class="review-form-own-checkbox">
                             <svg class="review-form-own-checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-checkmark"></use>
                             </svg>
                         </span>
-                        I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+                        I accept the terms and conditions of the <a class="privacy-policy" href="">Privacy
+                            Policy</a></label>
                 </div>
                 <button class="review-for-btn" type="submit">Send</button>
             </form>
